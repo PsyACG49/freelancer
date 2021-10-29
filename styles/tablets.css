@@ -1,0 +1,57 @@
+.nav-bg{
+    position: relative;
+    height: auto;
+
+}
+
+.nav-bg label{
+    display: block;
+  }
+
+.navegacion-principal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 78px;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+}
+
+.navegacion-principal a{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(4, 76, 90, 0.4);
+}
+
+#btm-menu:checked ~ .navegacion-principal{
+    opacity: 1;
+}
+
+.redes{
+    top:270px
+}
+
+
+
+
+.me-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.me-content img{
+    margin-bottom: 10px;
+}
+
+.redes2{
+    width: 60%;
+}
+
+.enviar{
+    width: 50%;
+}

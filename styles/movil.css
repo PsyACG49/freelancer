@@ -1,0 +1,15 @@
+.redes{
+    position: relative;
+    top:auto;
+    right: auto;
+    flex-direction: row;
+    width: 300px;
+}
+
+.redes2{
+    width: 80%;
+}
+
+.enviar input{
+    width: 100%;
+}
