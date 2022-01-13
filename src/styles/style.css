@@ -25,6 +25,7 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
+  margin: 10px;
 }
 
 h3 {
@@ -37,8 +38,18 @@ h3 {
   text-align: center;
 }
 
-.titulo{
+.i-size-gd {
+  font-size: 50px;
+  color: var(--secundario);
+}
 
+
+.i-size-md {
+  font-size: 25px;
+  color: var(--blanco);
+}
+
+.titulo{
   color: var(--blanco);
 }
 
@@ -82,6 +93,13 @@ h3 {
   border-radius: 1rem;
 }
 
+.h-fijo {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+}
+
 .nav-bg {
   background-color: var(--secundario);
   display: flex;
@@ -118,7 +136,7 @@ h3 {
 }
 
 .hero {
-  background-image: url(../img/hero4.jpg);
+  background-image: url(../public/img/hero4.jpg);
   background-position: center;
   background-size: cover;
   width: auto;
@@ -145,29 +163,25 @@ h3 {
   color: var(--blanco);
 }
 
-.redes{
-  position: absolute;
-  right: 30px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 230px;
-  margin-top: 15px;
-
+.icon-location {
+  color: var(--primario);
+  margin-right: 5px;
 }
+
 
 .cont-icon{
   width: 45px;
   height: 45px;
-  background-color: var(--primario);
+  background-color: var(--secundario);
   border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .cont-icon:hover{
-  background-color: var(--secundario);
+  background-color: var(--primario);
 }
 
 .ubicacion {
@@ -428,16 +442,6 @@ h3 {
   margin:15px auto 0 auto;
   display: flex;
   justify-content: space-evenly;
-}
-
-.redes2 .cont-icon{
-  width: 35px;
-  height: 35px;
-  background-color: var(--secundario);
-}
-
-.redes2 .cont-icon:hover{
-  background-color: var(--primario);
 }
 
 .footer {
