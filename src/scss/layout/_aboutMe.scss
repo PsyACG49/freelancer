@@ -1,0 +1,43 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contenedor-me {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.me-content {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+
+  img{
+    border-radius: 50%;
+    width: 180px;
+    height: 280px;
+  
+  }
+
+  div {
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: v.$primario;
+    border-radius: 1rem;
+    /* min-width: 350px; */
+  }
+
+  a{
+    text-decoration: none;
+    color: v.$obscuro;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: solid;
+    margin-bottom: 1rem;
+    
+    &:hover{
+        color: v.$blanco;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use 'base/variables' as v; 
+
+@mixin flex-sa {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin tablet {
+    @media (max-width: v.$tablets) {
+        @content;
+    }
+}
+ @mixin movile {
+     @media (max-width: v.$movile) {
+         @content;
+     }
+ }
