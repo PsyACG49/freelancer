@@ -1,0 +1,99 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.title-skills {
+  margin-bottom: 0;
+}
+
+.skills {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 10rem;
+  flex-wrap: wrap;
+}
+
+.contenedor-progres {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  margin: auto auto;
+
+  .progress {
+    margin: 102px auto;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border-left: var(--border);
+    border-right: var(--border);
+    border-top: var(--border);
+    border-bottom: 25px solid transparent;
+    position: relative;
+    color: var(--secundario);
+    text-align: center;
+  }
+
+  .prop {
+    border: var(--border-fondo);
+  }
+}
+
+.progress h3 {
+  margin: auto;
+  font-size: 3rem;
+}
+
+.progress p {
+  margin: 2rem auto 0 auto;
+  font-size: 1.8rem;
+}
+
+.progress .circulo {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  transform: rotate(-135deg);
+  border-top: var(--border);
+  border-left: var(--border);
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  animation-delay: 1s;
+}
+
+.c1 {
+  animation: rotar1 1s linear forwards;
+}
+
+.c2 {
+  animation: rotar2 1s linear forwards;
+}
+
+.c3 {
+  animation: rotar3 1s linear forwards;
+}
+
+.c4 {
+  animation: rotar1 1s linear forwards;
+}
+
+@keyframes rotar1 {
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotar2 {
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes rotar3 {
+  100% {
+    transform: rotate(16deg);
+  }
+}
