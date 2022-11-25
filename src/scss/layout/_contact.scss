@@ -1,0 +1,78 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.formulario {
+    background-color: v.$gris;
+    width: 40%;
+    min-width: 250px;
+    margin: 0 auto;
+    padding: .5rem;
+    border-radius: 1rem;
+  }
+  
+  .formulario fieldset {
+    border: none;
+  }
+  
+  .formulario p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: v.$primario;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .campo {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  
+  .campo label {
+    width: auto;
+    font-size: 1.2rem;
+    color: v.$blanco;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+  }
+  .campo2{
+    display: flex;
+    flex-direction: column;
+    color: v.$blanco;
+    font-size: 1.2;
+  }
+  
+  .campo2 label{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .campo2 .input-text{
+    width: auto;
+  }
+  
+  .input-text {
+    width: 70%;
+    font-size: 1.2rem;
+    border: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .enviar {
+    width: 40%;
+  }
+  
+  .redes2{
+    width: 30%;
+    margin:15px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer {
+    text-align: center;
+  }

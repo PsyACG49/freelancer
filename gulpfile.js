@@ -17,6 +17,7 @@ function dev ( done ) {
 
     done();
 }
-
+ 
+//comando para correr: gulp dev
 exports.css = css;
 exports.dev = dev;
